@@ -1,0 +1,64 @@
+.topbar {
+    width: calc(100% - 60px);
+    margin-top: 20px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    
+
+    .topbarContainer {
+        width: calc(100% - 4px);
+        background-color: #551a8b;
+        padding: 0 2px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .wrapper {
+            width: calc(100% - 40px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+
+            h1 {
+                font-size: 23px;
+                font-weight: 600px;
+                color: #8363ac;
+            }
+
+            span {
+                font-size: 14px;
+                color: gray;
+            }
+
+            .link {
+                text-decoration: none;
+                width: fit-content;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #8363ac;
+                    color: white;
+                    width: fit-content;
+                    padding: 4px 9px;
+                    border-radius: 5px;
+
+                    .icon {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+
+                };
+            }
+
+
+        }
+    }
+
+    
+}

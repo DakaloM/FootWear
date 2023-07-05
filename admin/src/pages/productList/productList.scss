@@ -1,0 +1,197 @@
+.productList {
+    flex: 4;
+    position: relative;
+    height: calc(100vh + 33px);
+    
+
+    .container {
+        padding: 30px;
+        width: calc(100% - 60px);
+        padding-top: 0;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        
+
+        .shoeList {
+            width: 100%;
+
+            table, thead,tr, td {
+                border: 1px solid white;
+                padding: 5px;
+            }
+            
+            table {
+
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+
+                
+
+                thead {
+                    background-color: #8363ac !important;
+                    
+                     tr {
+ 
+                         th {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: white;
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding: 10px;
+                         }
+                     }
+ 
+                 }
+
+                tr {
+                    width: 100%;
+                    background-color: #c6c0ff46;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #c6c0ff7b;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    &.white {
+                        background-color: #fff;
+                        &:hover {
+                            background-color: #c6c0ff7b;
+                            transition: all 0.2s ease-in-out;
+                            cursor: pointer;
+                        }
+                    }
+
+                    td{
+                        
+                        border: 1px solid white;
+                        .wrapper {
+                            width: 100%;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .status {
+                                font-size: 14px;
+                                width: fit-content;
+                                padding: 3px 15px;
+                                background-color: rgba(0, 128, 0, 0.378);
+                                border-radius: 10px;
+                                color: white;
+
+                                &.sold {
+                                    background-color: rgba(220, 20, 60, 0.393)
+                                    
+                                }
+                            }
+
+                            &.actions {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+
+                                .icon {
+                                    font-size: 20px;
+                                    color: #8363ac;
+                                    cursor: pointer;
+                                    width: fit-content;
+                                    background-color: #f2f2f2;
+                                    padding: 3px 7px;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            ul {
+                                padding: 0;
+                                list-style: none;
+                                display: flex;
+                                flex-wrap: wrap;
+                                width: 100% !important;
+                                gap: 5px;
+
+                                &.colors {
+
+                                    li {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        padding: 0;
+
+                                        border: 1px solid #8363ac;
+
+                                        &:after {
+                                            content: "";
+                                        }
+                                    }
+                                }
+
+                                li {
+                                    font-size: 14px;
+                                    color: #8363ac;
+                                    width: fit-content;
+                                    font-weight: 600;
+
+                                    &:after {
+                                        content: ",";
+                                    }
+
+                                    &:last-child {
+
+                                        &:after{
+                                            content: "";
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.product {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+
+                                img{
+                                    width: 70px !important;
+                                    height: 70px;
+                                    object-fit: cover;
+                                    border: 1px solid #8363ac;
+                                    margin-right: 20px;
+                                    border-radius: 5px;
+                                }
+
+                                .info {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .name {
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        margin-bottom: 5px;
+                                        color: #8363ac;
+                                    }
+
+                                    .price {
+                                        display: flex;
+                                        align-items: center;
+                                        color: gray;
+                                        font-size: 14px;
+
+                                        .icon {
+                                            font-size: 15px;
+                                            margin-right: 5px;
+                                            color: #8363ac;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

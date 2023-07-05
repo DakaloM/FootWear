@@ -1,0 +1,160 @@
+.customers {
+    flex: 4;
+    max-height: 100vh;
+
+    .container {
+        padding: 30px;
+        width: calc(100% - 60px);
+        padding-top: 0;
+        position: relative;
+        min-height: calc(100vh - 150px);
+
+        .shoeList {
+            width: 100%;
+
+            table, thead,tr, td {
+                border: 1px solid white;
+                padding: 5px;
+            }
+            
+            table {
+
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+
+                
+
+                thead {
+                    background-color: #8363ac !important;
+                    
+                     tr {
+ 
+                         th {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: white;
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding: 10px;
+                         }
+                     }
+ 
+                 }
+
+
+                tr {
+                    width: 100%;
+                    background-color: #c6c0ff46;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #c6c0ff7b;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    &.white {
+                        background-color: #fff;
+                        &:hover {
+                            background-color: #c6c0ff7b;
+                            transition: all 0.2s ease-in-out;
+                            cursor: pointer;
+                        }
+                    }
+
+                    td{
+                        
+                        border: 1px solid white;
+                        .wrapper {
+                            width: 100%;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &.stats {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            .spending {
+                                display: flex;
+                                align-items: center;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #8363ac;
+                                margin-bottom: 10px;
+                                background-color: #8363ac28;
+                                padding: 2px 7px;
+                                border-radius: 5px;
+
+
+                                .icon {
+                                    margin-right: 10px;
+                                    color: gray;
+                                }
+                            }
+
+                            .count {
+                                display: flex;
+                                align-items: center;
+                                color: gray;
+                                font-size: 20px;
+                                font-weight: 700;
+                                color: #8363ac;
+
+                                .icon {
+                                    margin-right: 5px;
+                                    font-size: 20px;
+                                }
+                            }
+                            
+
+                          
+
+                            &.customer {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+
+                                img{
+                                    width: 70px !important;
+                                    height: 70px;
+                                    object-fit: cover;
+                                    border: 2px solid #8363ac;
+                                    margin-right: 20px;
+                                }
+
+                                .info {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .name {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        margin-bottom: 5px;
+                                        color: #8363ac;
+                                    }
+
+                                    .email {
+                                        display: flex;
+                                        align-items: center;
+                                        color: gray;
+                                        font-size: 14px;
+
+                                        .icon {
+                                            font-size: 15px;
+                                            margin-right: 5px;
+                                            color: gray;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

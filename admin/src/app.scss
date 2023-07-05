@@ -1,0 +1,17 @@
+.App {
+
+    .notFoundText {
+        color: gray;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+
+        .rightSide {
+            flex: 4;
+            
+        }
+    }
+}

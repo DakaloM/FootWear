@@ -1,0 +1,114 @@
+.updates {
+    flex: 4;
+
+    .container {
+        padding: 30px;
+        width: calc(100% - 60px);
+        padding-top: 0;
+
+        .shoeList {
+            width: 100%;
+
+            table, thead,tr, td {
+                border: 1px solid white;
+                padding: 5px;
+            }
+            
+            table {
+
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+
+                
+
+                thead {
+                   background-color: #f7f7f7;
+                   
+
+                    td {
+                       font-size: 15px;
+                       font-weight: 700;
+                       color: #8363ac;
+                       text-transform: uppercase;
+                       text-align: center;
+                       padding: 10px;
+                    }
+
+                }
+
+                tr {
+                    width: 100%;
+                    background-color: #c6c0ff46;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #c6c0ff7b;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    &.white {
+                        background-color: #fff;
+                        &:hover {
+                            background-color: #c6c0ff7b;
+                            transition: all 0.2s ease-in-out;
+                            cursor: pointer;
+                        }
+                    }
+
+                    td{
+                        
+                        border: 1px solid white;
+                        .wrapper {
+                            width: 100%;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+                            .type {
+                                font-size: 14px;
+                                color: #8363ac;
+                                font-weight: 600;
+                            }
+
+                            .date {
+                                font-size: 15px;
+                                color: gray;
+                                font-weight: 600;
+                            }
+
+                            .message {
+                                width: 300px;
+                                font-size: 14px;
+                                color: gray;
+                            }
+                            
+                            &.actions {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+
+                                .icon {
+                                    font-size: 20px;
+                                    color: #8363ac;
+                                    cursor: pointer;
+                                    width: fit-content;
+                                    background-color: #f2f2f2;
+                                    padding: 3px 7px;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                           
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

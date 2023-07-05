@@ -1,0 +1,148 @@
+.orders {
+    flex: 4;
+    max-height: 100vh;
+
+    .container {
+        padding: 30px;
+        width: calc(100% - 60px);
+        padding-top: 0;
+        position: relative;
+        min-height: calc(100vh - 150px);
+
+        .orderList {
+            width: 100%;
+            
+
+            table, thead,tr, td {
+                border: 1px solid white;
+                padding: 5px;
+            }
+            
+            table {
+
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+
+                
+
+                thead {
+                   background-color: #8363ac !important;
+                   
+                    tr {
+
+                        th {
+                           font-size: 15px;
+                           font-weight: 700;
+                           color: white;
+                           text-transform: uppercase;
+                           text-align: center;
+                           padding: 10px;
+                        }
+                    }
+
+                }
+
+                tr {
+                    width: 100%;
+                    background-color: #c6c0ff46;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #c6c0ff7b;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    &.white {
+                        background-color: #fff;
+                        &:hover {
+                            background-color: #c6c0ff7b;
+                            transition: all 0.2s ease-in-out;
+                            cursor: pointer;
+                        }
+                    }
+
+                    td{
+                        
+                        border: 1px solid white;
+                        .wrapper {
+                            width: 100%;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 14px;
+                            
+
+                            .id {
+                                color: gray;
+                            }
+                            .date {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: gray;
+                            }
+
+                            .customer {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #8363ac;
+                            }
+
+                            .count {
+                                font-size: 20px;
+                                color: gray;
+                                font-weight: 700;
+                            }
+
+                            .price {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #8363ac;
+                            }
+
+                            .status {
+                                font-size: 14px;
+                                width: fit-content;
+                                padding: 3px 15px;
+                                background-color: rgba(218, 165, 32, 0.445);
+                                border-radius: 10px;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &.complete {
+                                    background-color: rgba(0, 128, 0, 0.478)
+                                    
+                                    
+                                }
+                            }
+
+                            &.actions {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+
+                                .icon {
+                                    font-size: 20px;
+                                    color: #8363ac;
+                                    cursor: pointer;
+                                    width: fit-content;
+                                    background-color: #f2f2f2;
+                                    padding: 3px 7px;
+                                    border-radius: 5px;
+                                }
+                            }
+
+
+
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
